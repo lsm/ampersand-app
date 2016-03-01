@@ -1,7 +1,7 @@
 {
-  "name": "ampersand-app",
+  "name": "youapp",
   "description": "Simple instance store for managing instances without circular dependency issues in ampersand apps.",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "author": "Henrik Joreteg <henrik@andyet.net>",
   "bugs": {
     "url": "https://github.com/ampersandjs/ampersand-app/issues"
@@ -12,7 +12,7 @@
     "object store"
   ],
   "license": "MIT",
-  "main": "ampersand-app.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ampersandjs/ampersand-app"
@@ -23,20 +23,14 @@
     "test-ci": "zuul -- test/index.js"
   },
   "dependencies": {
-    "ampersand-events": "^1.0.1",
-    "ampersand-version": "^1.0.2",
-    "lodash.assign": "^3.1.0",
-    "lodash.toarray": "^3.0.1"
-  },
-  "browserify": {
-    "transform": [
-      "ampersand-version"
-    ]
+    "eventemitter3": "1.1.1",
+    "lodash.assign": "4.0.4",
+    "lodash.toarray": "4.2.0"
   },
   "devDependencies": {
     "amp-keys": "^1.0.1",
-    "phantomjs": "^1.9.19",
-    "tape": "^3.4.0",
+    "phantomjs": "^2.1.3",
+    "tape": "^4.4.0",
     "zuul": "^3.9.0"
   }
 }
